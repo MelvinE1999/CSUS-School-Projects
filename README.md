@@ -1,4 +1,4 @@
-# Old-School-Work
+# Old School Work
 California State University, Sacramento course projects.
 Currently includes Csc 15, 20, 35, 131  
 Csc 15, 20, 35 are all labs that I have done.Kinda rough formatting.  
