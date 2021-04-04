@@ -10,4 +10,7 @@ The goal is to show the Commute Options and the Real Cost of each option in term
 
 ## Software Design Document
 
-For information on how the website was designed, please refer to our software design doucment. Click <a href="https://docs.google.com/document/d/1tsrqflXGT-XUsTqcP_MGGbjqLjIXZXWckheqNk4WRVM/edit?usp=sharing"> here </a>.
+For information on how the website was designed, please refer to our software design doucment. Click <a href="https://docs.google.com/document/d/1tsrqflXGT-XUsTqcP_MGGbjqLjIXZXWckheqNk4WRVM/edit?usp=sharing"> here </a>.  
+
+  ## Catalog Description
+Principles of Software Engineering covering the software development life cycle, including software requirements engineering (elicitation, modeling, analysis and specification), software design, software implementation and testing. Main topics include various software development process models, method and techniques for specifying requirements, architectural and detailed design specification, prototyping, top-down and bottom-up software implementation and testing. Topics also include project management, project documentation and the development of communication skills through written documentation and oral presentation.
