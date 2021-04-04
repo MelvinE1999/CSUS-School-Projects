@@ -1,2 +1,2 @@
-#Course Description
+#Course Description  
 Programming concepts using an object-oriented programming language. Introduction to methodologies for program design, development, testing, and documentation. Topics include program design, algorithm design, number systems, classes and objects, methods (functions), control structures, arrays, and interactive input/output. Lecture two hours, technical activity and laboratory two hours.
