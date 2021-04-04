@@ -1,0 +1,20 @@
+ ----jGRASP exec: java -Xnoagent -Djava.compiler=NONE -Xdebug -Xrunjdwp:transport=dt_socket,suspend=y,server=y PrintMultipOfNDigits
+ ----jGRASP: connected to debugger.
+This program willl take two number that you give it and multiply them together.
+Along with that it will show you all of the numbers that you add together to get the answer.
+
+Enter the first interger: 123
+Enter the seond interger: 246
+
+        123
+    X   246
+------------
+        738
+       4920
+      24600
+------------
+      30258
+
+Do you want to run this program again? no
+
+ ----jGRASP: operation complete.
