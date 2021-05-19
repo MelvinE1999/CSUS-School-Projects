@@ -1,0 +1,26 @@
+Some Actual(ish) Programming
+
+Now that your environment is working. It’s time to crack open the Codename One developer’s guide and start to dig into the basics. You will want to read some of section 3.3.14 so you can get familiar with how fonts are used and read enough of Chapter 1 so that it starts to become familar. 
+Now, your goal is to modify the Hello World app so that it displays a simple resume for you for the group projects for this course.  Before we talk in detail, let’s discuss some dos and don’ts.
+	1.	Do NOT include any personal information other than your first and last name. 
+	1.	This includes your address, your student ID, your phone number, your age, etc. None of these things are needed for this course.
+	2.	Do include any professional experience you’ve had as a programmer, but
+	1.	Do NOT include any details about the company, just tell everyone about the work that you did, e.g., “java programmer for three years, built backend code for web apps”
+	3.	Do include any open source projects that you’ve worked on. 
+	4.	Do include a brief description of the most challenging course projects that you’ve completed.
+	5.	Do include, at most, one or two lines about other skills that you have that might be useful in a software project.
+	1.	For example, if you are an artist or musician, or have experience as a software tester or done digital design work of any sort. 
+	6.	Do NOT overdo this, about three to four lines of detail, your name, and optionally, your picture, is all that you will need. 
+The goal here is to communicate to your fellow students and your instructor the kind of programming experience that you have had so that when we are discussing team projects everyone involved knows something about your background. You may include a picture if you would like, but make it small and there will be no disadvantage to your grade for not choosing to do so. 
+Ok, now that you have some idea, you are to use text, an optional image of you, and, CN1s fonts to create a SINGLE PAGE phone resume for this course. Everything that you display must fit on a single phone screen so that a screen shot can be posted in the forum.  Use fonts to make it look as nice as you can. Again, do not overthink this, using the standard built in fonts is just fine. 
+Simple Requirements
+	1.	Your resume must fit on one screen
+	2.	Your name must be at the top
+	3.	You must use some font and or font style changes to make some things stand out. For example, make your name bold and larger than some other text
+	4.	You may not use the theme editor/UI Designer for anything.
+	5.	You may not use a background image as your resume.
+	6.	The entire assignment MUST be in a single Java file named AppMain.java.  
+Don’t spend too much time on this part of the assignment it’s mostly meant  to get you to go through a few compile cycles so that you get familiar with things..  Do make the code as clean and as organized as your experience allows, this will have some impact on your grade. If you want to, feel free to explore the CN1 API a bit, and use whatever you like to pretty up the page. If you want more screen real estate, then choose a different skin from the simulator. You can download new skins from the web from within the simulator.  When you’re happy with how it looks, build your jar and make sure that it runs from the command line.  Take a clean screenshot of just the simulator. Take a minute and do a good job. Now, post that image to the discussion forum for Project 0.
+
+You’re almost done. You are going to submit two files. Submit your A0Prj.jar file and your AppMain.java file. Submit them separately. If I cannot read your .java file in Speedgrader you will not receive any points for that portion of the assignment.  Make sure that AppMain.java conforms to the hard requirement of an 80 character limit rule for this assignment. We will relax that rule in later assignments.
+Do not be overly concerned about grading on this assignment. The most important parts are to follow the directions here, don’t try to circumvent the requirement to format text, and participate in the discussion forum with legitimate engagement. Do put a little effort into making it look nice. If you phone it in you’ll lose a few points. Do put some effort into truly engaging the other students. Do try to finish it sooner than later so that you can engage in the discussion sooner. In future assignments we will be far more concerned about more grading specifics. In this assignment, just get it done and upload it.   Speaking to my more experienced programmers here, I’m not looking to be greatly impressed by your code in this assignment, save that energy for later, or for your other classes. Do use good basic programming skill and style, but don’t overcomplicate your submission. If you want to impress, then finish the assignment very quickly and upload your image so other students can ask you questions.
