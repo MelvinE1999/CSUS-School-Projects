@@ -1,0 +1,63 @@
+For each of the problems below you will design the circuit using techniques discussed in lecture. If minimization is necessary then you must show all work using the method described. For K-maps you may not use any online solver. Now, I’m well aware that these exist and that students regularly use them. For labs in this course, however, you are required to create your own k-maps using features of your editing environment, e.g., tables, rectangles, etc. The reason for this is that you must practice k-maps to build a good understanding of circuit minimization. If you practice creating your own, then you will quickly build insight.  As with all submitted work in this course, you may not submit anything that’s hand written. That said, my advice is to follow the procedure below for all of your labs.
+
+Hand write your lab problems. This will give you the experience that you need in working with k-maps and digital logic.
+Transcribe your k-maps and writeup in a document editor of your choice. 
+Create and test any schematics using LogiSim. 
+Export images from LogiSim to include schematics. 
+Note: You must use the built in export feature in LogiSim which will give you clean and appropriately sized images. Make sure that you disable the printer output option. You will lose points if you submit improperly sized, pixelated, or screen captured images. 
+You will find it super helpful for upcoming labs to define your submitted circuit as a sub-circuit and define a separate testing circuit. I will provide a simple example so that you understand clearly what I mean. You are not required to provide testing circuits for this lab, but the process will make your circuits neater and easier to debug. 
+Print your document to pdf and submit your pdf
+Note: You are not required to submit your source document, whether it’s .tex, .docx, or whatever. However, if I suspect that you used a solver then you will be required to provide your source document for verification. This means that if you choose to cheat and use a solver, that you still have to create the table manually. This is to level the playing field. Everyone has to do the work of manually creating their tables. 
+Keep in mind that the quizzes will have questions that you are expected to be able to answer quickly. If you haven’t practiced k-maps then these questions will seem extraordinarily difficult. If you have practiced k-maps then you should have developed the conceptual understanding to answer these questions easily. 
+Working these labs is the part of this course that will solidify the concepts in your mind. Shortchanging the process early will make the latter part of the course much more difficult. You may use whatever tools that you are comfortable with to create your lab writeup. That said, if you are up for the challenge. I encourage you to use latex. There are packages for latex that make drawing k-maps relatively straightforward and reasonably logical. I want to warn you though, latex has something of a learning curve. I have observed that students who use latex will, on average, score higher on the labs. This is part self-selection, but also partly because latex makes good layout decisions. Hence, students who submit documents created with latex will seldom lose points for neatness and the use of latex helps with organization. 
+
+You are submitting a relaxed lab report. You should know what a lab report looks like because juniors and seniors should have already taken a lab science course. You do not need an abstract or some of the more formal parts of a lab report. However, there are hard requirements and failure to follow these instructions will cost you points. You must include the following and your report must be written using complete sentences. 
+
+Title Page
+For each question
+The question itself.
+Your solution
+This includes all work described above.
+A brief discussion and circuit description 
+A description of the circuit and your solution
+Methods that you used to solve the problem
+Any necessary references
+For labs that have a overarching theme, you must include a more general introduction and summary. This first lab is just a collection of problems so that is not necessary here. Again, this is a relaxed lab report. You are not expected to incorporate much of the boiler plate that is common in physics or chemistry lab reports, however, you are expected to completely write up each question such that your solution is a self contained description of the problem with your solution. I should not have to look at any other document to know what problem you are solving and to understand how you solved the problem.  Note: This means that it is not just the circuit and a few words. It includes all equations, truth tables, k-maps, reductions, conversions, everything! Anything that helps you tell the story of how you solved this problem is what you want to include here.
+
+The goal of having your write things up is to thoroughly engage you in the problem. Yes, it takes time, procrastinating on labs and then complaining that you didn’t have enough time to do all of the “extra write-up work” will fall on deaf ears. It is in your interest to embrace this process as a part of learning this material. Writing a proper circuit description and discussion reinforces your understanding and pays back substantially in solving future labs. 
+
+Problems
+Implement a 5 bit CLA and then use this to create a 5 bit 2’s complement adder/subtractor.  You should have two five bit inputs, A and B. These inputs represent the data inputs for your adder. Include an input bit m that controls the mode, as discussed in lecture and in your book. You must implement overflow. Include an output Cout  that represents the carry out of the adder. No masking needs to occur in this circuit. R represents the result.
+You may use any gates that you wish, i.e., you may choose and SOP or a POS approach, however, you
+must use basic gates AND/OR/NOT/XOR throughout.
+You may use multiplexors.
+Implement your 5-bit adder as a sub-circuit so that you can include it in a larger test circuit.
+Implement a separate test circuit sub-circuit that includes dip switches and led outputs so that you can easily test your adder/subtractor.
+Implement a 5 bit Arithmetic Logic Unit as described in the table below. You must use your CLA adder/subtractor from this lab. There are some special requirements for this ALU as follows.
+XOR and NOT must be implemented using an XOR gate only. Thus you must properly route data into the XOR gate to accomplish the NOT function. Note: This is just one block, you may not duplicate this block. Both opcode 6 and 6 from the table below will both run the data through this same block.
+You must use existing modules e.g., ADD/SUB, ROR, and ASL to create the MUL2 and MUL3 datapaths. You may not use more than one of each type in your ALU. This means that you need to carefully think about how to route data in your datapath. I suggest that you first think about how to build the datapath for each element separately, then think about how to optimize them. You may use other gates as necessary for control and you may use multiplexors as necessary for routing.
+You must generate a carry out and an overflow out. Overflow indicates arithmetic overflow. Carry simply indicates that the carry bit is set. One or both must be masked when appropriate: Overflow and carry are set on addition and subtraction as discussed in the book and in the lecture.
+Overflow is set on MUL2 and MUL3 whenever the result cannot be contained in the six bits formed by the 5 bit result register and the carry out. In this sense, overflow can be thought of as the seventh bit of these arithmetic operations. Both carry and overflow are masked (i.e., not set) for GRAY, ROR, and Logic operations You may not use any logic other than basic gates AND/OR/NOT/XOR and multiplexors.
+OP	Code	Description
+ADD	0	R = A+B (signed)
+SUB	1	R=A-B (signed)
+MUL2	2	R=2*A (unsigned)
+MUL3	3	R=3*A (unsigned)
+ASL	4	R=A shifted one bit left through carry, shift zero into  low bit
+ROR	5	R=A rotated right one bit (do not rotate through carry)
+XOR	6	R=A XOR B
+NOT	7	R = NOT A
+AND	8	R = A AND B
+OR	9	R = A OR B
+Problem 5.11 in your textbook. You must include your sequence diagram and schematics in your write-up.
+Design your OG and NSG circuits as sub-modules.
+Design your sequential circuit so that it includes your sub-modules. Your result should replicate the overall look of figure 5.12 in your book.
+You must also include complete schematics of your OG and NSG circuits in your write-up.
+You do not need to include a test circuit for this problem.
+Make sure you are as clear as possible in outlining all of your design steps.
+Problem 5.17 in your textbook. You must both design your counter and include details in your write-up as well as implement this in Logisim.
+Implement your counter as sub-circuit
+Implement a test circuit that operates your counter and displays the count output on LEDs
+Problem 6.17 in your textbook. For this problem you do not have to implement the design in Logisim. You also do not have to design the adder, multipler and divider blocks.
+Your goal with this assignment is to create a high level block diagram of the datapath that is complete. Identify the outputs of each arithmetic block and be sure to include the equation for the minimum clock period. Note, this is a generalized result. For example,  you may specify the propagation delay of the multiplier as ΔMUL.
+Do both parts a and b with the same guidelines. That is, you are designing a high level datapath diagram and specifying the generalized equation for the minimum clock period in terms of the system modules.
